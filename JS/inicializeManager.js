@@ -38,6 +38,16 @@ if(!getCookie("smart-user")){
     </div>`;
     document.getElementById("welcome-screen").remove();
 }
+var elem = document.documentElement;
+function fullScreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen(); // Safari
+    } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen(); // IE11
+    }
+}
 var time = setInterval(function() {
     document.getElementById("boot-screen").remove();
     clearInterval(time);

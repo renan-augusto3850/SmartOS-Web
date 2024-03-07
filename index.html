@@ -16,10 +16,14 @@
                     <br>
                     <button id="continue-v1" style="margin-top: 20px;"><img src="ASSETS/next.png" width="50" height="30"></button>
             </div>
-
         </div>
         <div id="suspended-menu" style="position: absolute; display: none; padding: 10px; left: 2px; top: 50px; background-color: white;">
             <button class="options-menu" onclick="window.location.reload()">Reiniciar</button>
+        </div>
+        <div id="full-screen-request" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; padding-top: 200px; background-color: white; z-index: 9999;">
+            <h2>Ola, para entrar, entre em tela cheia:</h2>
+            <br>
+            <button onclick="fullScreen(); document.getElementById('full-screen-request').remove()">Entrar</button>
         </div>
         <div class="layout"></div>
         <div class="app-drawer" id="app-drawer">
