@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+:root{
+    --window-color: rgba(255, 255, 255, 0.9);
+    --blur: blur(2.5px);
+    --color-translucid: rgba(0, 0, 0, 0.3);
+    --button-color: transparent;
+}
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    cursor: url("/ASSETS/pointer.png"), auto;
+}
+body{
+    background-image: url("/WALPAPER/flower-of-good.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: Poppins;
+    text-align: center;
+}
+button{
+    background-color: var(--button-color);
+    border: transparent;
+    cursor: url("/ASSETS/pointer.png"), auto;
+}
+.system-button{
+    background-color: transparent;
+}
+.top-desk{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: var(--blur);
+    height: 40px;
+    padding: 2px;
+}
+#show-menu{
+    position: absolute;
+    left: 10px;
+}
+.options-menu{
+    border:solid 1px black; 
+    background-color: white;
+}
+#right-layout{
+    position: absolute;
+    right: 0;
+    color: white;
+    border-left: 2px solid black;
+    height: 100%;
+    width: 600px;
+}
+.layout{
+    width: 100%;
+}
+.icon{
+    border-radius: 10px;
+}
+.taskbar{
+    background-color: var(--color-translucid);
+    position: absolute;
+    width: auto;
+    height: 50px;
+    bottom: 5px;
+    padding: 0 10px 5px 10px;
+    left: 35%;
+    transform: translateX(50%);
+    border-radius: 20px;
+    backdrop-filter: var(--blur);
+}
+.window{
+    width: auto;
+    height: auto;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: 0.6s ease opacity, 0.6s ease trasnform;
+}
+.window-into{
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    padding: 5px;
+    height: auto;
+    background-color: var(--window-color);
+}
+.TopofWindow{
+    height: 50px;
+    border-radius:20px 20px 0px 0px;
+    background-color: var(--color-translucid);
+    cursor: grab;
+    backdrop-filter: var(--blur);
+}
+.closebutton{
+    position: absolute;
+    background: red;
+    border: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    right: 10px;
+    top: 10px;
+}
+.namefromapp{
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    color: white;
+}
+.app-drawer{
+    position: absolute;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 68%;
+    height: 400px;
+    transition: 0.5s ease-in-out; 
+    bottom: -100%;
+    left: 15%;
+    transform: translate(3%);
+    padding: 10px;
+    border-radius: 20px;
+}

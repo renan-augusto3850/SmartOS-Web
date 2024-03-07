@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Smart Os - Web</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<html lang="pt-br">
+    <body>
+        <div id="boot-screen" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: black; z-index: 9999;">
+            <img src="ASSETS/smart.png" width="100" style="position: absolute; top: 30%; left: 45%; transform:translate(50%, 50%);">
+        </div>
+        <div id="welcome-screen" style="display: none; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: rgb(83, 83, 250); z-index: 9977;">
+            <div id="right-layout" id="v1">
+                    <h1>Bem Vindo ao SmartOs!</h1>
+                    <p style="margin-top: 30%;">Vamos começar criando seu Usuario:</p>
+                    <input class="username-input" spellcheck="false">
+                    <br>
+                    <button id="continue-v1" style="margin-top: 20px;"><img src="ASSETS/next.png" width="50" height="30"></button>
+            </div>
+
+        </div>
+        <div id="suspended-menu" style="position: absolute; display: none; padding: 10px; left: 2px; top: 50px; background-color: white;">
+            <button class="options-menu" onclick="window.location.reload()">Reiniciar</button>
+        </div>
+        <div class="layout"></div>
+        <div class="app-drawer" id="app-drawer">
+            <button id="smart-app" class="system-button"><img src="ASSETS/smart.png" width="50" class="icon"></button>
+            <button id="notepad-app" class="system-button"><img src="ASSETS/notepad.svg" width="50" class="icon"></button>
+            <button id="galak-app" class="system-button"><img src="ASSETS/galak.png" width="50" height="50" class="icon"></button>
+            <button id="todo-app" class="system-button"><img src="ASSETS/todo.png" width="50" class="icon"></button>
+        </div>
+    </body>
+</html>
+<script src="JS/cookiesManager.js"></script>
+<script src="JS/inicializeManager.js"></script>
+<script src="JS/main.js"></script>
+<script src="SYSTEM-APPS/smart.js"></script>
+<script src="SYSTEM-APPS/notepad.js"></script>
+<script src="SYSTEM-APPS/galak.js"></script>
+<script src="SYSTEM-APPS/todo.js"></script>
+<script src="SYSTEM-APPS/settings.js"></script>
+<script src="SYSTEM-APPS/terminal.js"></script>
